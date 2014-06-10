@@ -1,0 +1,32 @@
+Collaborative Action Planning of Humanoid Robots Exchanging a Small Object
+
+Before all:
+
+Install Nao ROS package:
+Follow instructions 3.2 v0.1 of http://wiki.ros.org/nao/Installation/remote.
+Replace the script nao_camera.py.
+Compile.
+
+Add directories in .bashrc:
+export AL_DIR=$HOME/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/naoqi-runtime
+export AL_DIR_SDK=$HOME/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk
+export PYTHONPATH="$PYTHONPATH:$AL_DIR/lib"
+
+
+
+The planning of the exchange is done using behavior trees. Actions can be found in /src/actions.
+The behavior trees can be found in /bt-examples. They use actions that were declared in the lauch files in /launch/, and which ROS nodes are declared in CMakeLists.txt.
+
+
+In order to launch a ROS launch file, type in terminal:
+
+LD_LIBRARY_PATH=~/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/naoqi-runtime/lib:$LD_LIBRARY_PATH roslaunch exchange "name of the launch file".launch
+
+For instance:
+
+LD_LIBRARY_PATH=~/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/naoqi-runtime/lib:$LD_LIBRARY_PATH roslaunch exchange NAO_humanBT.launch
+
+
+To change the IP and ports of the NAOs, modify this information in the corresponding launch file you want to launch.
+The object detection uses a HSV filter which coefficients S AND V are fixed (they can be modified in /src/imageconverter.cpp: search for "ballPosForHand" and replace the coefficients in getContourBall3).
+Coefficient H can be set in /src/actions/TakeBall.cpp, search for "change here for the color".
