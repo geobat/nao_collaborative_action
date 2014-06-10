@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject>
+<storageModule moduleId="org.eclipse.cdt.core.settings">
+<cconfiguration id="org.eclipse.cdt.core.default.config.1">
+<storageModule buildSystemId="org.eclipse.cdt.core.defaultConfigDataProvider" id="org.eclipse.cdt.core.default.config.1" moduleId="org.eclipse.cdt.core.settings" name="Configuration">
+<externalSettings/>
+<extensions>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser">
+<attribute key="addr2line" value="addr2line"/>
+<attribute key="c++filt" value="c++filt"/>
+</extension>
+</extensions>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+<project-mappings/>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+<storageModule moduleId="org.eclipse.cdt.core.pathentry">
+<pathentry excluding="**/CMakeFiles/" kind="out" path=""/>
+<pathentry kind="mac" name="BOOST_CB_DISABLE_DEBUG" path="" value=""/>
+<pathentry include="/home/geoffray/ros_workspace/exchange/include" kind="inc" path="" system="true"/>
+<pathentry include="/opt/ros/fuerte/include" kind="inc" path="" system="true"/>
+<pathentry include="/opt/ros/fuerte/share/actionlib/include" kind="inc" path="" system="true"/>
+<pathentry include="/opt/ros/fuerte/include/opencv" kind="inc" path="" system="true"/>
+<pathentry include="/opt/ros/fuerte/stacks/vision_opencv/cv_bridge/include" kind="inc" path="" system="true"/>
+<pathentry include="/opt/ros/fuerte/stacks/image_common/image_transport/include" kind="inc" path="" system="true"/>
+<pathentry include="/opt/ros/fuerte/stacks/pluginlib/include" kind="inc" path="" system="true"/>
+<pathentry include="/opt/ros/fuerte/stacks/pluginlib" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/ros_workspace/exchange/src" kind="inc" path="" system="true"/>
+<pathentry include="/usr/local/include/opencv" kind="inc" path="" system="true"/>
+<pathentry include="/usr/local/include" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/ros_workspace/exchange/msg_gen/cpp/include" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/ros_workspace/exchange/srv_gen/cpp/include" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include/alcommon" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include/alvision" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include/alcore" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include/alproxies" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include/alvalue" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include/altools" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include/alfactory" kind="inc" path="" system="true"/>
+<pathentry include="/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/simulator-sdk/include/libthread" kind="inc" path="" system="true"/>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+<buildTargets>
+<target name=": ROSBUILD_genaction_msgs" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>ROSBUILD_genaction_msgs</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": ROSBUILD_genmsg_cpp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>ROSBUILD_genmsg_cpp</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": ROSBUILD_genmsg_lisp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>ROSBUILD_genmsg_lisp</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": ROSBUILD_genmsg_py" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>ROSBUILD_genmsg_py</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": ROSBUILD_gensrv_cpp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>ROSBUILD_gensrv_cpp</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": ROSBUILD_gensrv_lisp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>ROSBUILD_gensrv_lisp</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": ROSBUILD_gensrv_py" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>ROSBUILD_gensrv_py</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] TakeBall" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>TakeBall</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] TakeBall/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>TakeBall/fast</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Build" path="[Targets]/[exe] TakeBall" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-C "/home/geoffray/ros_workspace/exchange" </buildArguments>
+<buildTarget>TakeBall</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Clean" path="[Targets]/[exe] TakeBall" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/cmake</buildCommand>
+<buildArguments>-E chdir "/home/geoffray/ros_workspace/exchange" "/usr/bin/cmake" -P "CMakeFiles/TakeBall.dir/cmake_clean.cmake"</buildArguments>
+<buildTarget></buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[lib] bt_server" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>bt_server</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[lib] bt_server/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>bt_server/fast</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Build" path="[Targets]/[lib] bt_server" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-C "/home/geoffray/ros_workspace/exchange" </buildArguments>
+<buildTarget>bt_server</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Clean" path="[Targets]/[lib] bt_server" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/cmake</buildCommand>
+<buildArguments>-E chdir "/home/geoffray/ros_workspace/exchange" "/usr/bin/cmake" -P "CMakeFiles/bt_server.dir/cmake_clean.cmake"</buildArguments>
+<buildTarget></buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": clean-test-results" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>clean-test-results</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] exchange" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>exchange</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] exchange/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>exchange/fast</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Build" path="[Targets]/[exe] exchange" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-C "/home/geoffray/ros_workspace/exchange" </buildArguments>
+<buildTarget>exchange</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Clean" path="[Targets]/[exe] exchange" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/cmake</buildCommand>
+<buildArguments>-E chdir "/home/geoffray/ros_workspace/exchange" "/usr/bin/cmake" -P "CMakeFiles/exchange.dir/cmake_clean.cmake"</buildArguments>
+<buildTarget></buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] imageconverter" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>imageconverter</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] imageconverter/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>imageconverter/fast</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Build" path="[Targets]/[exe] imageconverter" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-C "/home/geoffray/ros_workspace/exchange" </buildArguments>
+<buildTarget>imageconverter</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Clean" path="[Targets]/[exe] imageconverter" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/cmake</buildCommand>
+<buildArguments>-E chdir "/home/geoffray/ros_workspace/exchange" "/usr/bin/cmake" -P "CMakeFiles/imageconverter.dir/cmake_clean.cmake"</buildArguments>
+<buildTarget></buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] objectServer" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>objectServer</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] objectServer/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>objectServer/fast</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Build" path="[Targets]/[exe] objectServer" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-C "/home/geoffray/ros_workspace/exchange" </buildArguments>
+<buildTarget>objectServer</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Clean" path="[Targets]/[exe] objectServer" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/cmake</buildCommand>
+<buildArguments>-E chdir "/home/geoffray/ros_workspace/exchange" "/usr/bin/cmake" -P "CMakeFiles/objectServer.dir/cmake_clean.cmake"</buildArguments>
+<buildTarget></buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": rebuild_cache" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>rebuild_cache</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] robotMove" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>robotMove</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] robotMove/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>robotMove/fast</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Build" path="[Targets]/[exe] robotMove" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-C "/home/geoffray/ros_workspace/exchange" </buildArguments>
+<buildTarget>robotMove</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Clean" path="[Targets]/[exe] robotMove" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/cmake</buildCommand>
+<buildArguments>-E chdir "/home/geoffray/ros_workspace/exchange" "/usr/bin/cmake" -P "CMakeFiles/robotMove.dir/cmake_clean.cmake"</buildArguments>
+<buildTarget></buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": rosbuild_precompile" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>rosbuild_precompile</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": rosbuild_premsgsrvgen" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>rosbuild_premsgsrvgen</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": rospack_genmsg" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>rospack_genmsg</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": rospack_genmsg_all" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>rospack_genmsg_all</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": rospack_genmsg_libexe" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>rospack_genmsg_libexe</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": rospack_gensrv" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>rospack_gensrv</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": rospack_gensrv_all" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>rospack_gensrv_all</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": test" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>test</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": test-future" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>test-future</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": test-results" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>test-results</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": test-results-run" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>test-results-run</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": tests" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>tests</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": all" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>all</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": clean" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>clean</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/BTObjectServer.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/BTObjectServer.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/BTObjectServer.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/BTObjectServer.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/BTObjectServer.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/BTObjectServer.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/RobotMove.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/RobotMove.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/RobotMove.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/RobotMove.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/RobotMove.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/RobotMove.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/WQUPC.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/WQUPC.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/WQUPC.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/WQUPC.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/WQUPC.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/WQUPC.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/actions/TakeBall.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/actions/TakeBall.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/actions/TakeBall.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/actions/TakeBall.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/actions/TakeBall.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/actions/TakeBall.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/client/display.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/display.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/client/display.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/display.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/client/display.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/display.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/client/keystroke.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/keystroke.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/client/keystroke.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/keystroke.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/client/keystroke.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/keystroke.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/client/main.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/main.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/client/main.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/main.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/client/main.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/main.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/client/navigation.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/navigation.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/client/navigation.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/navigation.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/client/navigation.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/navigation.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/client/node.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/node.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/client/node.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/node.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/client/node.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/node.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/client/parser.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/parser.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/client/parser.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/parser.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/client/parser.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/parser.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/client/rosaction.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/rosaction.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/client/rosaction.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/rosaction.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/client/rosaction.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/client/rosaction.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] src/imageconverter.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/imageconverter.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] src/imageconverter.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/imageconverter.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] src/imageconverter.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>src/imageconverter.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+</buildTargets>
+</storageModule>
+<storageModule moduleId="scannerConfiguration">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="/usr/bin/gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="/usr/bin/make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</storageModule>
+</cconfiguration>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<project id="exchange.null.1" name="exchange"/>
+</storageModule>
+</cproject>

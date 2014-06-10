@@ -1,0 +1,22 @@
+<package>
+  <description brief="behavior_trees">
+
+     behavior_trees
+
+  </description>
+  <author>Geoffray</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nao_behavior_tree</url>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="actionlib"/>
+  <depend package="actionlib_msgs"/>
+  <depend package="roslib"/>
+  <depend package="sensor_msgs"/>
+  <depend package="cv_bridge"/>
+  <depend package="image_transport"/>
+  <depend package="opencv2"/>
+  
+</package>

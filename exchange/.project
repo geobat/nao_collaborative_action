@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>exchange-RelWithDebInfo@exchange</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/bin/make</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.arguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<value>/home/geoffray/ros_workspace/exchange</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|ROS_ROOT=/opt/ros/fuerte/share/ros|ROS_PACKAGE_PATH=/opt/ros/fuerte:/home/geoffray/ros_workspace|PYTHONPATH=/opt/ros/fuerte/lib/python2.7/dist-packages:/opt/ros/fuerte/lib/python2.7/dist-packages::/home/geoffray/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/naoqi-runtime/lib|PATH=/opt/ros/fuerte/bin:/opt/ros/fuerte/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.auto</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.clean</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
+					<value>/home/geoffray/ros_workspace/exchange</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.make.core.makeNature</nature>
+		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] TakeBall</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] TakeBall/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] TakeBall/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] TakeBall/Source Files/TakeBall.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/actions/TakeBall.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] TakeBall/Source Files/rosaction.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/rosaction.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] TakeBall/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] TakeBall/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] TakeBall/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] bt_server</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] bt_server/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] bt_server/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] bt_server/Source Files/rosaction.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/rosaction.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] bt_server/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] bt_server/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] bt_server/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Source Files/rosaction.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/rosaction.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Source Files/node.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/node.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Source Files/parser.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/parser.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Source Files/keystroke.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/keystroke.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Source Files/navigation.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/navigation.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Source Files/main.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/main.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Source Files/display.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/client/display.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] exchange/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] imageconverter</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] imageconverter/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] imageconverter/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] imageconverter/Source Files/imageconverter.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/imageconverter.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] imageconverter/Source Files/WQUPC.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/WQUPC.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] imageconverter/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] imageconverter/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] imageconverter/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] objectServer</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] objectServer/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] objectServer/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] objectServer/Source Files/BTObjectServer.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/BTObjectServer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] objectServer/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] objectServer/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] objectServer/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] robotMove</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] robotMove/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] robotMove/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] robotMove/Source Files/RobotMove.cpp</name>
+			<type>1</type>
+			<location>/home/geoffray/ros_workspace/exchange/src/RobotMove.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] robotMove/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] robotMove/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] robotMove/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -1,0 +1,10 @@
+[*
+	A TakeBall1
+	A Catch1
+	A GiveBall1
+	A TakeBall2
+	/
+		A Drop1
+		A Catch2
+	|
+]

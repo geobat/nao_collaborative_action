@@ -1,0 +1,19 @@
+(cl:defpackage exchange-msg
+  (:use )
+  (:export
+   "<ROSACTIONRESULT>"
+   "ROSACTIONRESULT"
+   "<ROSFEEDBACK>"
+   "ROSFEEDBACK"
+   "<ROSRESULT>"
+   "ROSRESULT"
+   "<ROSACTIONGOAL>"
+   "ROSACTIONGOAL"
+   "<ROSACTION>"
+   "ROSACTION"
+   "<ROSACTIONFEEDBACK>"
+   "ROSACTIONFEEDBACK"
+   "<ROSGOAL>"
+   "ROSGOAL"
+  ))
+
