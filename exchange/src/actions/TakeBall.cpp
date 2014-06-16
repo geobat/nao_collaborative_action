@@ -132,8 +132,8 @@ void placeArmForExchange(int nao,std::string ip,int arm,Eigen::Vector3f position
 		ROS_INFO("Z = %f",position[2]-result[2]);
 
 
-		//ser arm
-		moveArm(nao,ip,position[0]-result[0],position[0]-result[0],position[0]-result[0]-0.02,0,0,0,"RArm",motion_proxy_ptr);
+		//set arm
+		moveArm(nao,ip,position[0]-result[0],position[0]-result[0]-0.03,position[0]-result[0],0,0,0,"RArm",motion_proxy_ptr);
 	}
 
 	if (arm==1){//LEFT ARM
