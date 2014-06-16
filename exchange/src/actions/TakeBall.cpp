@@ -337,7 +337,7 @@ public:
 					//attente
 					sleep(3);
 					if(client4.call(srv4)){
-						position[0]=(float)srv4.response.pos_x-0.02;
+						position[0]=(float)srv4.response.pos_x;
 						position[1]=(float)srv4.response.pos_y;
 						position[2]=(float)srv4.response.pos_z;}
 					hand=whichHand(position);
