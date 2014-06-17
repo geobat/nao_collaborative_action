@@ -28,6 +28,8 @@ public:
 	void meltChains(vector<vector<vector<int> > > chains,vector<vector<int> > meltingList);
 	bool areConnected(int p,int q);
 	int root(int i);
+	int root2(int p);
+	int root3(int p);
 	void unite(int p,int q);
 	vector<vector<vector <int> > > sendBack();
 
