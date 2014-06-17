@@ -94,8 +94,35 @@ int WQUPC::root(int i){
 //////////
 
 
+//Method to get the root of a node, path compression with 2 loops
+int WQUPC::root2(int p){
+	int root=p;
+	//the first loop finds the root of the node
+	while (root != id.at(root).at(0))
+            root = id.at(root).at(0);
+	//the second loop rewrites the father of every node to the root
+        while (p != root) {
+            int newp = id.at(p).at(0);
+            id.at(p).at(0) = root;
+            p = newp;
+        }
+        return root;
+}
+//////////
+
+
+//Method to get the root of a node, recursive path compression
+int WQUPC::root3(int p){
+	if (p != id.at(p).at(0))
+       		id.at(p).at(0) = root3(id.at(p).at(0));
+   	return id.at(p).at(0);
+}
+//////////
+
+
 //Method to unify the subtrees
 void WQUPC::unite(int p,int q){
+	//here select the root you want
 	int i=root(p);
 	int j=root(q);
 
