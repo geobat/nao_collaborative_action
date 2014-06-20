@@ -1,3 +1,5 @@
+//this action consists of presenting the object by raising the arm
+
 #include <exchange/rosaction.h>
 #include <alproxies/almotionproxy.h>
 #include <alproxies/alrobotpostureproxy.h>
