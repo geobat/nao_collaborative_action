@@ -1,4 +1,5 @@
-//TO UNDERSTAND THE CODE, WATCH THE REPORT
+//This class contains all the image processing methods that will be used by 2 servers for sending the object's area
+//and the object's position
 
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
@@ -39,8 +40,8 @@ class ImageConverter {
 	ros::ServiceServer service2;
 	image_transport::ImageTransport it_;
 	image_transport::Subscriber image_sub_;
-	Mat imgcam;
-	vector<vector<int> >meltingList;
+	Mat imgcam;//camera image
+	vector<vector<int> >meltingList;//equivalence table for WQUPC
 
 public:
 
@@ -53,7 +54,7 @@ public:
 		cv::namedWindow(WINDOW3);
 		cv::namedWindow(WINDOW4);
 
-//====> ici j'ai rajouté les NAO_ID pour spécifier le nom
+//====> NAO_ID is there to specify the name of the nao using the service
 		service1 = nh_.advertiseService("ballposhead"+NAO_ID, &ImageConverter::ballPosForHead,this);
 		service2 = nh_.advertiseService("ballposhand"+NAO_ID, &ImageConverter::ballPosForHand,this);
 		ROS_INFO("Ready to send info");
@@ -102,7 +103,7 @@ public:
 
 	//ZONE 1 GLOBAL TESTS
 
-	//algo pour faire juste la detection
+	//test color detection
 	Mat test1(Mat img_cam){
 		//nao red simulator 0-30
 		//pink ball 150-180
@@ -116,7 +117,7 @@ public:
 	}
 	//////////
 
-	//algo pour tout avoir la position
+	//DEPRECATED
 	Mat test2(Mat img_cam){
 		//with RGB
 		//vector<vector<int> > chain =getLongestChain(getContourBall2(imgcam, 0.94, 0.08, 0.01, 140));
@@ -138,7 +139,7 @@ public:
 	}
 	//////////
 
-	//algo pour tester les frontières
+	//DEPRECATED
 	Mat test3(Mat img_cam){
 
 		Mat im(7,11, CV_8UC1, Scalar(0));
@@ -155,14 +156,14 @@ public:
 	}
 	//////////
 
-	//algo pour dessiner les chaines
+	//test for drawing chains of every edge in the image
 	Mat test4(Mat img_cam){
 		Mat chains = drawChains(getChains(getContourBall(img_cam,150,180,80,255,80,255)),img_cam);
 		return chains;
 	}
 	//////////
 
-	//algo pour l'algo global simplifié avec WQUPC
+	//test wqupc
 	Mat test5(Mat img_cam){
 		//with RGB
 		//vector<vector<int> > chain =getLongestChain(getContourBall2(imgcam, 0.94, 0.08, 0.01, 140),1);
@@ -190,7 +191,7 @@ public:
 	}
 	//////////
 
-	//algo pour tester les chaines
+	//test first scan of connected component labeling algorithm
 	void test6(){
 		Mat im(7,11, CV_8UC1, Scalar(0));
 		im.at<uchar>(Point(1,1))=255;
@@ -238,7 +239,7 @@ public:
 	}
 	//////////
 
-	//algo pour détecter rapidement la balle et dire de faire touner la tête
+	//test preliminary detection
 	void test7(Mat img_cam){
 
 		Mat lowResBall = lowResBallFindingHSV(img_cam,150,180,80,255,80,255,2);
@@ -498,6 +499,7 @@ public:
 
 
 	//Method to get the contours of the ball with a gradient method for HSV. the output is "included" into the input
+	//DEPRECATED
 	Mat testGetContourBall(Mat img_cam){
 
 		Mat imHSV=img_cam;
@@ -547,7 +549,7 @@ public:
 				int numList=0;
 				meltingList.clear();
 
-				//preparation de l'image
+				//initialization
 				for(int i=0; i<contoursImage.rows;i++){
 					im.at<uchar>(Point(0,i))=0;
 					im.at<uchar>(Point(contoursImage.cols-1,i))=0;
@@ -556,7 +558,7 @@ public:
 							im.at<uchar>(Point(i,0))=0;
 						}
 
-				//lancement
+				//launching
 				for (int i=1;i<contoursImage.rows;i++){
 					for (int j=1;j<contoursImage.cols-1;j++){
 
@@ -566,7 +568,7 @@ public:
 							//if it is a lonely point
 							if ((contoursImage.at<uchar>(Point(j-1,i-1))==0 && contoursImage.at<uchar>(Point(j,i-1))==0 &&
 									contoursImage.at<uchar>(Point(j+1,i-1))==0 && contoursImage.at<uchar>(Point(j-1,i))==0)){
-				//ROS_INFO("point unique");
+				//ROS_INFO("unique point");
 								numList++;
 								im.at<uchar>(Point(j,i))=numList;
 								vector<int> dublet;
@@ -583,7 +585,7 @@ public:
 
 								//left
 								if (contoursImage.at<uchar>(Point(j-1,i))!=0){
-				//ROS_INFO("a un voisin a gauche");
+				//ROS_INFO("left neighbore");
 				//cv::waitKey();
 
 									vector<int> dublet;
@@ -595,7 +597,7 @@ public:
 								}
 								//upleft
 								else{if (contoursImage.at<uchar>(Point(j-1,i-1))!=0){
-				//ROS_INFO("a un voisin en haut a gauche");
+				//ROS_INFO("upleft neighbor");
 
 									vector<int> dublet;
 									dublet.push_back(i);
@@ -606,7 +608,7 @@ public:
 									}
 								//up
 									else{if (contoursImage.at<uchar>(Point(j,i-1))!=0){
-				//ROS_INFO("a un voisin en haut");
+				//ROS_INFO("up neighbor");
 
 									vector<int> dublet;
 									dublet.push_back(i);
@@ -619,13 +621,13 @@ public:
 									}
 
 
-				//ROS_INFO("verifie si haut droit existe");
+				//ROS_INFO("up right neighbor");
 								//up right
 								if (contoursImage.at<uchar>(Point(j+1,i-1))!=0 ){
 
 									if(contoursImage.at<uchar>(Point(j-1,i-1))!=0 &&
 										contoursImage.at<uchar>(Point(j-1,i-1))!=contoursImage.at<uchar>(Point(j+1,i-1))){
-				//ROS_INFO("a un voisin en haut a droite et en haut a gauche");
+				//ROS_INFO("upleft and up right neighbor");
 										vector<int> dublet2;
 										dublet2.push_back(im.at<uchar>(Point(j+1,i-1))-1);
 										dublet2.push_back(im.at<uchar>(Point(j-1,i-1))-1);
@@ -635,7 +637,7 @@ public:
 									else{
 										if(contoursImage.at<uchar>(Point(j-1,i))!=0 &&
 												contoursImage.at<uchar>(Point(j-1,i))!=contoursImage.at<uchar>(Point(j+1,i-1))){
-				//ROS_INFO("a un voisin en haut a droite et a gauche");
+				//ROS_INFO("left and upright neighbor");
 											vector<int> dublet2;
 											dublet2.push_back(im.at<uchar>(Point(j+1,i-1))-1);
 											dublet2.push_back(im.at<uchar>(Point(j-1,i))-1);
@@ -644,7 +646,7 @@ public:
 										}
 
 										else{
-				//ROS_INFO("a un voisin en haut a droite seulement");
+				//ROS_INFO("only up right neighbor");
 											if( (contoursImage.at<uchar>(Point(j-1,i))==0) & (contoursImage.at<uchar>(Point(j-1,i-1))==0) &
 													(contoursImage.at<uchar>(Point(j,i-1))==0)){
 
@@ -675,7 +677,7 @@ public:
 		int numList=0;
 		meltingList.clear();
 
-		//preparation de l'image
+		//initialization
 		for(int i=0; i<contoursImage.rows;i++){
 			im.at<uchar>(Point(0,i))=0;
 			im.at<uchar>(Point(contoursImage.cols-1,i))=0;
@@ -684,7 +686,7 @@ public:
 			im.at<uchar>(Point(i,0))=0;
 		}
 
-		//lancement
+		//launching
 		for (int i=1;i<contoursImage.rows;i++){
 			for (int j=1;j<contoursImage.cols-1;j++){
 
@@ -761,7 +763,7 @@ public:
 	}
 	//////////
 
-	//Method that prints all the chains
+	//Method that prints all the chains detected after a first scan of connected component labeling
 	Mat drawChains(vector<vector<vector<int> > > chains,Mat contoursImage){
 		Mat im(contoursImage.rows, contoursImage.cols, CV_8UC1, Scalar(255));
 		for(int chain=0;chain<chains.size();chain++){
@@ -786,7 +788,8 @@ public:
 	//////////
 
 
-	//Method to return the wanted chain
+	//Method to return the wanted chain using a criterion.
+	//if you want to use another criterion, you can add a new kindOfLongestChain
 	vector<vector<int> > chooseChain(vector<vector<vector<int> > > chains,int kindOfLongestChain,Mat contoursImage){
 		vector<vector<int> > finalList;
 
@@ -830,7 +833,7 @@ public:
 
 
 	//Method that get from the image with the contours the longest chain of pixels
-	//USELESS NOW
+	//DEPRECATED
 	vector<vector<int> > getLongestChain(Mat contoursImage,int kindOfLongestChain){
 		Mat im = contoursImage;
 		vector<vector<vector<int> > > chainList;
@@ -1091,7 +1094,7 @@ public:
 	double H=imgcam.rows;
 	double L=imgcam.cols;
 	//with alpha on x image direction and beta on y image direction
-//=====>au cas ou ici j'ai inversé les /H et /L en fin de ligne et les vertical horizontal
+
 	double tanalpha1 = (p1(0)-H/2)*2*tan(half_vertical_angle)/H;
 	double tanbeta1 = (p1(1)-L/2)*2*tan(half_horizontal_angle)/L;
 	double tanalpha2 = (p2(0)-H/2)*2*tan(half_vertical_angle)/H;
@@ -1304,6 +1307,7 @@ public:
 	}
 
 	//Method to send back the ball position for hand
+	//if you added a new function for detecting the object, don't forget to replace the following code
 	bool ballPosForHand(exchange::BallPosForHand::Request &req,
 			exchange::BallPosForHand::Response &res){
 
