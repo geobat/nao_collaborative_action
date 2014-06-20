@@ -1,3 +1,5 @@
+//this action consists of closing the hand
+
 #include <exchange/rosaction.h>
 #include <alproxies/almotionproxy.h>
 #include <alproxies/alrobotpostureproxy.h>
