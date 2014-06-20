@@ -1,3 +1,5 @@
+//this action consists of changing the hand holding the object
+
 #include <exchange/rosaction.h>
 #include <alproxies/almotionproxy.h>
 #include <alproxies/alrobotpostureproxy.h>
