@@ -17,6 +17,9 @@ WQUPC::~WQUPC() {
 	// TODO Auto-generated destructor stub
 }
 
+//This class contains methods to perform WQUPC. It takes in input a vector containing all the labeled connected pixels,
+//merges the connected label, and sends back a new vector with the new labeled connected components.
+
 
 //Method using WQUPC algorithm to unite different nodes of a graph. Equivalent to union find.
 void WQUPC::meltChains(vector<vector<vector<int> > > chains,vector<vector<int> > meltingList){
