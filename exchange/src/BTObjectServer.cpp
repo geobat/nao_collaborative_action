@@ -7,18 +7,15 @@
 #include "exchange/BallPosGetBT.h"
 
 using namespace std;
-int N;
-
-//au cas ou autre version dans le collaborative_motion_nao
-//class BTObjectServer {
-	
-	//number of robots at the beginning
+int N;//number of robots at the beginning
 
 //note: if multiple objects have to be managed =>
-//the "actions.cpp" (in src) can be extended to the case of multiple objects
+//the "actions.cpp" files (in src) can be extended to the case of multiple objects
 //currently in the "actions.cpp" files, the only object is given the number 1
-//one would have to modify these files to ask the object number and update it when taking an object. it should be fine to use a ros topic.
+//one would have to modify these files to ask the object number and update it when taking an object. 
 
+//the memory is contained in a vector. the line corresponds to the ID of the NAO. 0 is the id of the object. 1 the hand holding it(0 is right
+//1 left). 2 is the arm that is raised (0 right, 1 left, 2both)
 
 //public:
 	BTObjectServer :: BTObjectServer() {
