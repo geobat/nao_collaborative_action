@@ -1,3 +1,5 @@
+//this actions consists of asking the ball's position after centering the head and placing a hand under the ball.
+
 #include "exchange/rosaction.h"
 #include <alproxies/almotionproxy.h>
 #include <alproxies/alrobotpostureproxy.h>
@@ -132,7 +134,7 @@ void placeArmForExchange(int nao,std::string ip,int arm,Eigen::Vector3f position
 		ROS_INFO("Z = %f",position[2]-result[2]);
 
 
-		//set arm
+		//set arm 0.03 comes from the calibration of the arm
 		moveArm(nao,ip,position[0]-result[0],position[0]-result[0]-0.03,position[0]-result[0],0,0,0,"RArm",motion_proxy_ptr);
 	}
 
@@ -297,7 +299,7 @@ public:
 			int pos=0;
 			ros::spinOnce();
 
-			//search for ball
+			//search for ball and center the head on it
 			ROS_INFO("SEARCH");
 			speechProxy->say("where is the ball?");
 			time_to_complete_ = (ros::Duration) 0;
@@ -347,7 +349,7 @@ public:
 
 				ros::spinOnce();
 
-				//si la balle est proche et le choix de la main est fait
+				//if the ball is accessible, catch it
 				if(tries<5){
 					placeArmForExchange(NAO_PORT_p,NAO_IP_p,hand-1,position,motion_proxy_ptr);
 					speechProxy->say("Ready?");
