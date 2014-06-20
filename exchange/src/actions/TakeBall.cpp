@@ -1,4 +1,4 @@
-//this actions consists of asking the ball's position after centering the head and placing a hand under the ball.
+//this actions consists of asking the object's position after centering the head and placing a hand under the ball.
 
 #include "exchange/rosaction.h"
 #include <alproxies/almotionproxy.h>
