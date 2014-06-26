@@ -30,3 +30,5 @@ LD_LIBRARY_PATH=~/Downloads/webots-for-nao/resources/projects/robots/nao/aldebar
 To change the IP and ports of the NAOs, modify this information in the corresponding launch file you want to launch.
 The object detection uses a HSV filter which coefficients S AND V are fixed (they can be modified in /src/imageconverter.cpp: search for "ballPosForHand" and replace the coefficients in getContourBall3).
 Coefficient H can be set in /src/actions/TakeBall.cpp, search for "change here for the color".
+
+The file or methods qualified as DEPRECATED should not be used, because they belong to older version which may not work anymore.
