@@ -1,4 +1,4 @@
-//this action consists of opening the hand
+//this action consists of opening the hand. It corresponds to OPENHAND
 
 #include <exchange/rosaction.h>
 #include <alproxies/almotionproxy.h>
