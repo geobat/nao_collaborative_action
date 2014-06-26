@@ -1,4 +1,4 @@
-//this action consists of presenting the object by raising the arm
+//this action consists of presenting the object by raising the arm. It corresponds to PRESENTOBJECT
 
 #include <exchange/rosaction.h>
 #include <alproxies/almotionproxy.h>
