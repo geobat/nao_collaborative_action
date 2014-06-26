@@ -1,6 +1,6 @@
-#include "RobotMove.h"
-//TO UNDERSTAND THE CODE, WATCH THE REPORT
+//FILE DEPRECATED
 
+#include "RobotMove.h"
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>
