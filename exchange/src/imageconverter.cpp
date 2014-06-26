@@ -1,5 +1,5 @@
-//This class contains all the image processing methods that will be used by 2 servers for sending the object's area
-//and the object's position
+//This class represents the imageconverter ROS node. It contains all the image processing methods that will be used by 2 servers 
+//for sending the object's area and the object's position to the robotmove ROS node.
 
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
@@ -1317,6 +1317,7 @@ public:
 		//vector<vector<vector<int> > > chains=getChains2(getContourBall3(imgcam, req.min_h,req.max_h,120,255,120,255));
 		vector<vector<vector<int> > > chains=getChains2(grad);
 		vector<vector<vector<int> > >  meltedchainlist =meltChains(chains,meltingList);
+		//here use your criterion to grasp the object
 		vector<vector<int> > chain=chooseChain(meltedchainlist,1,imgcam);
 
 		publishImage(grad,WINDOW);
@@ -1324,8 +1325,9 @@ public:
 		publishImage(drawMatFromList(chain,imgcam),WINDOW3);
 		publishImage(color,WINDOW4);
 
-		//get info about the ball
+		//get 2D info about the ball
 		vector <double> ballinfo; ballinfo = ballInfo(chain);
+		//get 3D info about the ball
 		Eigen::Vector3f coord=get3DcoordBall(ballinfo);
 		res.pos_x=coord(0);
 		res.pos_y=coord(1);
