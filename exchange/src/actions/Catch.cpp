@@ -1,4 +1,4 @@
-//this action consists of closing the hand
+//this action consists of closing the hand. It corresponds to CLOSEHAND
 
 #include <exchange/rosaction.h>
 #include <alproxies/almotionproxy.h>
