@@ -1,4 +1,5 @@
 //this actions consists of asking the object's position after centering the head and placing a hand under the ball.
+//it corresponds to PLACEARM
 
 #include "exchange/rosaction.h"
 #include <alproxies/almotionproxy.h>
@@ -288,7 +289,7 @@ public:
 
 
 
-			//change here for the color
+			//CHANGE HERE FOR THE COLOR
 			srv3.request.min_h=150;
 			srv3.request.max_h=180;
 			srv4.request.min_h=150;
