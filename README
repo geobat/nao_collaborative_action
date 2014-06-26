@@ -26,6 +26,7 @@ For instance:
 
 LD_LIBRARY_PATH=~/Downloads/webots-for-nao/resources/projects/robots/nao/aldebaran/naoqi-runtime/lib:$LD_LIBRARY_PATH roslaunch exchange NAO_humanBT.launch
 
+Only the launch files containing BT in their names should be used.
 
 To change the IP and ports of the NAOs, modify this information in the corresponding launch file you want to launch.
 The object detection uses a HSV filter which coefficients S AND V are fixed (they can be modified in /src/imageconverter.cpp: search for "ballPosForHand" and replace the coefficients in getContourBall3).
